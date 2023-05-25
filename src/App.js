@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import HooksRule from "./Components/HooksRule";
+import UseStateArray from "./Components/UseStateArray";
+import UseStateObject from "./Components/UseStateObject";
+import ShortCirEval from "./Components/ShortCirEval";
+import Forms from "./Components/Forms";
+import UseEffect1 from "./Components/UseEffect1";
+import UseEffect2 from "./Components/UseEffect2";
+import UseEffectApi from "./Components/UseEffectApi";
+import UseReducer from "./Components/UseReducer";
+import ComA from "./Components/UseContext/ComA";
 
-function App() {
+function App(props) {
+  // const [text, setText] = useState("I am about to change to");
+  // const changeTxt = () => {
+  //   text === "I am about to change to"
+  //     ? setText("new text")
+  //     : setText("I am about to change to");
+  // };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        {/* <h1>{text}</h1>
+        <button onClick={changeTxt}>Change the text</button> */}
+        {/* <HooksRule></HooksRule> */}
+        {/* <UseStateArray /> */}
+        {/* <UseStateObject /> */}
+        {/* <ShortCirEval /> */}
+        <Forms />
+        {/* <UseEffect1 /> */}
+        {/* <UseEffect2 /> */}
+        {/* <UseEffectApi /> */}
+        {/* <UseReducer /> */}
+        {/* <ComA /> */}
+      </div>
+    </>
   );
 }
 
